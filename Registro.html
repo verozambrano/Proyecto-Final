@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/registro.css">
 </head>
+
 <body>
+
     <div class="wrapper">
         <div class="form-wrapper sign-in">
             <form action="">
@@ -20,12 +22,38 @@
                     <label for="">Contarseña</label>
                 </div>
                 <div  class="remember">
-                    <label for=""><input type="checkbox"> Recordarme</label>
+                    <label><input type="checkbox"> Recordarme</label>
                 </div>
                 <button type="submit">Login</button>
                 <div class="signUp-link">
                    <p> No tienes una cuenta <a href="#"
-                  class="signUp-link">sign Up </a></p> 
+                  class="signUpBtn-link">sign Up </a></p> 
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Usuario</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Contarseña</label>
+                </div>
+                <div  class="remember">
+                    <label><input type="checkbox"> Acepto los terminos y condiciones? </label>
+                </div>
+                <button type="submit">Sign up</button>
+                <div class="signUp-link">
+                   <p> Ya tengo una cuenta <a href="#"
+                  class="signInBtn-link">sign In </a></p> 
                 </div>
             </form>
         </div>
