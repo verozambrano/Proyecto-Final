@@ -9,56 +9,106 @@
 
 <body>
 
+    <header>
+        <h2 class="Logo">Decor Interior Desig</h2>
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Contacto.html">Contactos</a>
+            <a href="Productos.html">Productos</a>
+           
+        </nav>
+         
+    </header>
+    <section>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-image: url("img/dormitorio-chapa-natural-ideas-dreams-810-a-brito.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+            }
+        </style>
+    </section>
     <div class="wrapper">
-        <div class="form-wrapper sign-in">
-            <form action="">
-                <h2>Acceso</h2>
-                <div class="input-group">
-                    <input type="text" required>
-                    <label for="">Usuario</label>
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label >Email</label>
                 </div>
-                <div class="input-group">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
                     <input type="password" required>
-                    <label for="">Contarseña</label>
+                    <label >contraseña</label>
                 </div>
-                <div  class="remember">
-                    <label><input type="checkbox"> Recordarme</label>
+                <div class="remember-forgot">
+                    <label ><input type="checkbox">
+                    Remember me</label>
+                    <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit">Login</button>
-                <div class="signUp-link">
-                   <p> No tienes una cuenta <a href="#"
-                  class="signUpBtn-link">sign Up </a></p> 
+                <button type="submit" class="btn"> Login</button>
+                <div class="login-register">
+                    <p>Don´t have an account?<a href="#" 
+                        class="register-link">Register</a></p>
                 </div>
             </form>
         </div>
 
-        <div class="form-wrapper sign-up">
-            <form action="">
-                <h2>Sign Up</h2>
-                <div class="input-group">
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
                     <input type="text" required>
-                    <label for="">Usuario</label>
+                    <label >Nombre </label>
                 </div>
-                <div class="input-group">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
                     <input type="email" required>
-                    <label for="">Email</label>
+                    <label >Email</label>
                 </div>
-                <div class="input-group">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
                     <input type="password" required>
-                    <label for="">Contarseña</label>
+                    <label >contraseña</label>
                 </div>
-                <div  class="remember">
-                    <label><input type="checkbox"> Acepto los terminos y condiciones? </label>
+                <div class="remember-forgot">
+                    <label ><input type="checkbox"> I 
+                    agree to the terms & condicions</label>
                 </div>
-                <button type="submit">Sign up</button>
-                <div class="signUp-link">
-                   <p> Ya tengo una cuenta <a href="#"
-                  class="signInBtn-link">sign In </a></p> 
+                <button type="submit" class="btn"> Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" 
+                        class="login-link">Login</a></p>
                 </div>
             </form>
         </div>
     </div>
+   
 
     <script src="JS/script.js"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" ></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
 </body>
 </html>

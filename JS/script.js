@@ -1,13 +1,14 @@
-const signInBtnLink = document.querySelector(`.signInBtn-link`);
-const signUpBtnLink = document.querySelector(`.signUpBtn-link`);
 const wrapper = document.querySelector(`.wrapper`);
+const loginLink = document.querySelector(`.login-link`);
+const registerLink = document.querySelector(`.register-link`);
+ 
 
-signUpBtnLink.addEventListener(`click`, () => {
-    wrapper.clasList.toggle(`active`);
+registerLink.addEventListener(`click`, () => {
+    wrapper.clasList.add (`active`);
 });
 
-signInBtnLink.addEventListener(`click`, () => {
-    wrapper.clasList.toggle(`active`);
+loginLink.addEventListener(`click`, () => {
+    wrapper.clasList.remove (`active`);
 });
 
 
