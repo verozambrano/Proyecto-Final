@@ -20,15 +20,20 @@ body{
 position: relative;
 width: 400px;
 height: 500px;
-background: rgb(179, 161, 124);
-box-shadow: 0 0 50px rgb(83, 76, 76);
+background: rgb(148, 123, 91);
+box-shadow: 0 0 50px rgb(109, 67, 13);
 border-radius: 20px;
 padding: 40px;
 overflow: hidden;
 }
 
 .wrapper:hover {
-    animation: animate ls linear infinite;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 .form-wrapper{
     display: flex;
@@ -44,9 +49,13 @@ overflow: hidden;
 }
 
 .wrapper .form-wrapper.sign-up {
-
+ position: absolute;
+ top: 450px;
+ left: 0;
 }
-
+.wrapper.active .form-wrapper.sign-up {
+    transform: translateY(-450px);
+}
 h2{
  font-size: 30px;
  color: rgb(206, 194, 156);
@@ -65,6 +74,7 @@ h2{
     font-size: 16px;
     color:rgb(207, 199, 199) ;
     pointer-events: none;
+    transition: .5s;
 }
 .input-group input{
     width: 320px;
@@ -76,7 +86,10 @@ h2{
     border: none;
     outline: none;
 }
-
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: -5px;
+}
 .remember {
     margin: -5px 0 15px 5px;
 }
@@ -87,15 +100,15 @@ h2{
 }
 
 .remember label input {
-    accent-color: rgb(204, 198, 224);
+    accent-color: rgb(189, 181, 218);
 }
 
 button {
     position: relative;
     width: 100%;
     height: 40px;
-    background: bisque; 
-    box-shadow: 0 0 10px rgb(172, 172, 134);
+    background: rgb(167, 146, 121); 
+    box-shadow: 0 0 10px rgb(243, 243, 196);
     font-size: 16px;
     color: rgb(0, 0, 0);
     font-weight: 500;
@@ -112,11 +125,11 @@ button {
 }
 
 .signUp-link p {
-    color:bisque;
+    color:rgb(245, 238, 229);
 }
 
 .signUp-link p a {
-    color: rgb(68, 7, 7);
+    color: rgb(65, 18, 18);
     text-decoration: none;
     font-weight: 500;
 }
