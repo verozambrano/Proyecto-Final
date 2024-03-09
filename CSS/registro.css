@@ -97,12 +97,12 @@ header{
  transition: none;
  transform: translateX(-400px);
 }
-.wrapper .form-box register{
+.wrapper .form-box.register{
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
-.wrapper.active .form-box register{
+.wrapper.active .form-box.register{
     transition: transform .18s ease;
     transform: translateX(0);
  }
